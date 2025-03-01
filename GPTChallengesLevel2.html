@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array And Script Challenges Level 2</title>
+</head>
+<body>
+    <h1>Array And Script Challenges Level 2</h1>
+    <script>
+        {
+            function removeDuplicates(numbers){ // Challenge 4: Remove Duplicates from an Array
+                return console.log([...new Set(numbers)]);
+            }
+            removeDuplicates([1, 2, 2, 3, 4, 4, 5]);
+        }
+
+        {
+            function sortNumbers(numbers){ // Challenge 5: Sort the Numbers in the Array
+                numbers.sort((a,b) => a - b);
+                return console.log(numbers);
+            }
+            sortNumbers([5, 3, 8, 1]);
+        }
+
+        {
+            function doubleNumbers(numbers){//  Challenge 6: Multiply Each Element by 2
+                return console.log(numbers.map(item => item * 2));
+            }
+            doubleNumbers([1, 2, 3]);
+        }
+
+    </script>
+</body>
+</html>

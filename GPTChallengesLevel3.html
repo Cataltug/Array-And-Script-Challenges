@@ -1,0 +1,55 @@
+html<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array And Script Challenges Level 3</title>
+</head>
+<body>
+    <h1>Array And Script Challenges Level 3</h1>
+    <script>
+        {
+            function sumArray(numbers){//   Challenge 7: Calculate the Sum of Numbers in an Array
+                let sum = 0;
+                for(let i = 0; i < numbers.length; i++){
+                    sum += numbers[i];
+                }
+                return sum;
+            }
+            console.log(sumArray([1, 2, 3, 4]));
+        }
+
+        {
+            function getRandomElement(arr){//   Challenge 8: Select a Random Element from an Array
+                const randomIndex = Math.floor(Math.random() * arr.length);
+                return arr[randomIndex];
+            }
+            console.log(getRandomElement(["apple", "banana", "cherry", "watermelon"]));
+        }
+
+        {
+            function isSumEqual(numbers, target){// Challenge 9: Check if the Sum of All Elements Equals a Target Number
+                let sum = 0;
+                for(let i = 0; i < numbers.length; i++){
+                    sum += numbers[i];
+                }
+                return sum === target;
+            }
+            console.log(isSumEqual([2, 3, 5], 10));
+        }
+
+        {
+            function longestWord(arr){ //Challenge 10: Find the Longest Word in an Array
+                let longest = "";
+                for(let i = 0; i < arr.length; i++){
+                    if(arr[i].length > longest.length){
+                        longest = arr[i];
+                    }
+                }
+                return longest;
+            }
+            console.log(longestWord(["apple", "banana", "strawberry", "watermelon"]));
+        }
+    </script>
+</body>
+</html>

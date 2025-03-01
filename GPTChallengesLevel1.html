@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array And Script Challenges</title>
+</head>
+<body>
+    <h1>Array And Script Challenges</h1>
+    <script>
+        {
+            function findMax(numbers){ // Challenge 1: Find the Largest Number in an Array
+                numbers.sort((a,b) => a - b);
+                return console.log(numbers[numbers.length - 1]);
+        }
+            findMax([3, 7, 2, 9, 5]);
+        }
+
+        {
+            function reverseArray(numbers){ //  Challenge 2: Reverse the Array
+                return console.log(numbers.reverse());
+            }
+            reverseArray([1, 2, 3, 4]);
+        }
+
+        {
+            function containsElement(numbers, index){// Challenge 3: Check if an Element Exists in the Array
+                return console.log(numbers.includes(index));
+            }
+            containsElement([10, 20, 30], 20);
+            containsElement([10, 20, 30], 40);
+        }
+    </script>
+    
+</body>
+</html>
